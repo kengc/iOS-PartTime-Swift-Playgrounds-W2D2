@@ -167,16 +167,16 @@ print("current gear is \(bike.currentGear)nd gear")
 class Cube: Box {
     let depth: Double
     
-    init (Depth: Double) {
-        depth = Depth
+    init (depth: Double) {
+        self.depth = depth
     }
     
     override func area() -> Double {
-        return (self.height * self.width * depth)
+        return (self.height * self.width * self.depth)
     }
 }
 
-var result = Cube(Depth: 3.3)
+var result = Cube(depth: 3.3)
 result.width = 11
 result.height = 11
 print("The total area is: \(result.area()) sq meters")
